@@ -1,0 +1,175 @@
+00:45:30 :: DEBUG :: |
+|
+00:45:30 :: DEBUG :: inspector answers
+00:45:30 :: DEBUG :: question type ----- select character
+00:45:30 :: DEBUG :: data -------------- [{'color': 'blue', 'suspect': True, 'position': 5, 'power': True}, {'color': 'pink', 'suspect': True, 'position': 2, 'power': True}, {'color': 'grey', 'suspect': True, 'position': 0, 'power': True}]
+00:45:30 :: DEBUG :: response index ---- 0
+00:45:30 :: DEBUG :: response ---------- {'color': 'blue', 'suspect': True, 'position': 5, 'power': True}
+00:45:31 :: DEBUG :: |
+|
+00:45:31 :: DEBUG :: inspector answers
+00:45:31 :: DEBUG :: question type ----- activate blue power
+00:45:31 :: DEBUG :: data -------------- [0, 1]
+00:45:31 :: DEBUG :: response index ---- 0
+00:45:31 :: DEBUG :: response ---------- 0
+00:45:31 :: DEBUG :: |
+|
+00:45:31 :: DEBUG :: inspector answers
+00:45:31 :: DEBUG :: question type ----- select position
+00:45:31 :: DEBUG :: data -------------- [6]
+00:45:31 :: DEBUG :: response index ---- 0
+00:45:31 :: DEBUG :: response ---------- 6
+00:45:31 :: DEBUG :: |
+|
+00:45:31 :: DEBUG :: inspector answers
+00:45:31 :: DEBUG :: question type ----- activate blue power
+00:45:31 :: DEBUG :: data -------------- [0, 1]
+00:45:31 :: DEBUG :: response index ---- 1
+00:45:31 :: DEBUG :: response ---------- 1
+00:45:31 :: DEBUG :: |
+|
+00:45:31 :: DEBUG :: inspector answers
+00:45:31 :: DEBUG :: question type ----- blue character power room
+00:45:31 :: DEBUG :: data -------------- [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+00:45:31 :: DEBUG :: response index ---- 8
+00:45:31 :: DEBUG :: response ---------- 8
+00:45:31 :: DEBUG :: |
+|
+00:45:31 :: DEBUG :: inspector answers
+00:45:31 :: DEBUG :: question type ----- blue character power exit
+00:45:31 :: DEBUG :: data -------------- [9, 4]
+00:45:31 :: DEBUG :: response index ---- 1
+00:45:31 :: DEBUG :: response ---------- 4
+00:45:31 :: DEBUG :: |
+|
+00:45:31 :: DEBUG :: inspector answers
+00:45:31 :: DEBUG :: question type ----- select character
+00:45:31 :: DEBUG :: data -------------- [{'color': 'pink', 'suspect': True, 'position': 2, 'power': True}, {'color': 'grey', 'suspect': True, 'position': 0, 'power': True}]
+00:45:31 :: DEBUG :: response index ---- 1
+00:45:31 :: DEBUG :: response ---------- {'color': 'grey', 'suspect': True, 'position': 0, 'power': True}
+00:45:31 :: DEBUG :: |
+|
+00:45:31 :: DEBUG :: inspector answers
+00:45:31 :: DEBUG :: question type ----- activate grey power
+00:45:31 :: DEBUG :: data -------------- [0, 1]
+00:45:31 :: DEBUG :: response index ---- 1
+00:45:31 :: DEBUG :: response ---------- 1
+00:45:31 :: DEBUG :: |
+|
+00:45:31 :: DEBUG :: inspector answers
+00:45:31 :: DEBUG :: question type ----- grey character power
+00:45:31 :: DEBUG :: data -------------- [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+00:45:31 :: DEBUG :: response index ---- 5
+00:45:31 :: DEBUG :: response ---------- 5
+00:45:31 :: DEBUG :: |
+|
+00:45:31 :: DEBUG :: inspector answers
+00:45:31 :: DEBUG :: question type ----- select position
+00:45:31 :: DEBUG :: data -------------- [1, 4]
+00:45:31 :: DEBUG :: response index ---- 0
+00:45:31 :: DEBUG :: response ---------- 1
+00:45:31 :: DEBUG :: |
+|
+00:45:31 :: DEBUG :: inspector answers
+00:45:31 :: DEBUG :: question type ----- select character
+00:45:31 :: DEBUG :: data -------------- [{'color': 'brown', 'suspect': True, 'position': 6, 'power': True}, {'color': 'red', 'suspect': False, 'position': 3, 'power': True}, {'color': 'white', 'suspect': False, 'position': 4, 'power': True}, {'color': 'purple', 'suspect': False, 'position': 7, 'power': True}]
+00:45:31 :: DEBUG :: response index ---- 1
+00:45:31 :: DEBUG :: response ---------- {'color': 'red', 'suspect': False, 'position': 3, 'power': True}
+00:45:32 :: DEBUG :: |
+|
+00:45:32 :: DEBUG :: inspector answers
+00:45:32 :: DEBUG :: question type ----- activate red power
+00:45:32 :: DEBUG :: data -------------- [0, 1]
+00:45:32 :: DEBUG :: response index ---- 0
+00:45:32 :: DEBUG :: response ---------- 0
+00:45:32 :: DEBUG :: |
+|
+00:45:32 :: DEBUG :: inspector answers
+00:45:32 :: DEBUG :: question type ----- select position
+00:45:32 :: DEBUG :: data -------------- [2, 7]
+00:45:32 :: DEBUG :: response index ---- 0
+00:45:32 :: DEBUG :: response ---------- 2
+00:45:32 :: DEBUG :: |
+|
+00:45:32 :: DEBUG :: inspector answers
+00:45:32 :: DEBUG :: question type ----- activate red power
+00:45:32 :: DEBUG :: data -------------- [0, 1]
+00:45:32 :: DEBUG :: response index ---- 0
+00:45:32 :: DEBUG :: response ---------- 0
+00:45:32 :: DEBUG :: |
+|
+00:45:32 :: DEBUG :: inspector answers
+00:45:32 :: DEBUG :: question type ----- select character
+00:45:32 :: DEBUG :: data -------------- [{'color': 'purple', 'suspect': False, 'position': 7, 'power': True}]
+00:45:32 :: DEBUG :: response index ---- 0
+00:45:32 :: DEBUG :: response ---------- {'color': 'purple', 'suspect': False, 'position': 7, 'power': True}
+00:45:32 :: DEBUG :: |
+|
+00:45:32 :: DEBUG :: inspector answers
+00:45:32 :: DEBUG :: question type ----- activate purple power
+00:45:32 :: DEBUG :: data -------------- [0, 1]
+00:45:32 :: DEBUG :: response index ---- 1
+00:45:32 :: DEBUG :: response ---------- 1
+00:45:32 :: DEBUG :: |
+|
+00:45:32 :: DEBUG :: inspector answers
+00:45:32 :: DEBUG :: question type ----- purple character power
+00:45:32 :: DEBUG :: data -------------- ['blue', 'brown', 'red', 'white', 'pink', 'black', 'grey']
+00:45:32 :: DEBUG :: response index ---- 2
+00:45:32 :: DEBUG :: response ---------- red
+00:45:33 :: DEBUG :: |
+|
+00:45:33 :: DEBUG :: inspector answers
+00:45:33 :: DEBUG :: question type ----- select character
+00:45:33 :: DEBUG :: data -------------- [{'color': 'brown', 'suspect': True, 'position': 5, 'power': True}, {'color': 'purple', 'suspect': False, 'position': 3, 'power': True}, {'color': 'blue', 'suspect': True, 'position': 5, 'power': True}]
+00:45:33 :: DEBUG :: response index ---- 1
+00:45:33 :: DEBUG :: response ---------- {'color': 'purple', 'suspect': False, 'position': 3, 'power': True}
+00:45:33 :: DEBUG :: |
+|
+00:45:33 :: DEBUG :: inspector answers
+00:45:33 :: DEBUG :: question type ----- activate purple power
+00:45:33 :: DEBUG :: data -------------- [0, 1]
+00:45:33 :: DEBUG :: response index ---- 1
+00:45:33 :: DEBUG :: response ---------- 1
+00:45:33 :: DEBUG :: |
+|
+00:45:33 :: DEBUG :: inspector answers
+00:45:33 :: DEBUG :: question type ----- purple character power
+00:45:33 :: DEBUG :: data -------------- ['blue', 'brown', 'red', 'white', 'pink', 'black', 'grey']
+00:45:33 :: DEBUG :: response index ---- 2
+00:45:33 :: DEBUG :: response ---------- red
+00:45:33 :: DEBUG :: |
+|
+00:45:33 :: DEBUG :: inspector answers
+00:45:33 :: DEBUG :: question type ----- select character
+00:45:33 :: DEBUG :: data -------------- [{'color': 'brown', 'suspect': True, 'position': 5, 'power': True}, {'color': 'blue', 'suspect': True, 'position': 5, 'power': True}]
+00:45:33 :: DEBUG :: response index ---- 1
+00:45:33 :: DEBUG :: response ---------- {'color': 'blue', 'suspect': True, 'position': 5, 'power': True}
+00:45:33 :: DEBUG :: |
+|
+00:45:33 :: DEBUG :: inspector answers
+00:45:33 :: DEBUG :: question type ----- activate blue power
+00:45:33 :: DEBUG :: data -------------- [0, 1]
+00:45:33 :: DEBUG :: response index ---- 1
+00:45:33 :: DEBUG :: response ---------- 1
+00:45:33 :: DEBUG :: |
+|
+00:45:33 :: DEBUG :: inspector answers
+00:45:33 :: DEBUG :: question type ----- blue character power room
+00:45:33 :: DEBUG :: data -------------- [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+00:45:33 :: DEBUG :: response index ---- 4
+00:45:33 :: DEBUG :: response ---------- 4
+00:45:33 :: DEBUG :: |
+|
+00:45:33 :: DEBUG :: inspector answers
+00:45:33 :: DEBUG :: question type ----- blue character power exit
+00:45:33 :: DEBUG :: data -------------- [0, 8, 5]
+00:45:33 :: DEBUG :: response index ---- 0
+00:45:33 :: DEBUG :: response ---------- 0
+00:45:33 :: DEBUG :: |
+|
+00:45:33 :: DEBUG :: inspector answers
+00:45:33 :: DEBUG :: question type ----- select position
+00:45:33 :: DEBUG :: data -------------- [4, 6]
+00:45:33 :: DEBUG :: response index ---- 1
+00:45:33 :: DEBUG :: response ---------- 6

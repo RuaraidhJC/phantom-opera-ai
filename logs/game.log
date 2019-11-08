@@ -1,40 +1,64 @@
-00:45:22 :: INFO :: no client yet
-00:45:27 :: INFO :: Received client !
-00:45:30 :: INFO :: Received client !
-00:45:30 :: INFO :: received all clients
-00:45:30 :: INFO :: the fantom is pink
-00:45:30 :: INFO :: 
+11:52:10 :: INFO :: no client yet
+11:52:16 :: INFO :: Received client !
+11:52:16 :: INFO :: Received client !
+11:52:16 :: INFO :: received all clients
+11:52:16 :: INFO :: the fantom is blue
+11:52:16 :: INFO :: 
 =======
 new game
 =======
-00:45:30 :: INFO :: shuffle 8 tiles
-00:45:30 :: INFO :: shuffle 10 cards
-00:45:30 :: INFO :: 
+11:52:16 :: INFO :: shuffle 8 tiles
+11:52:16 :: INFO :: shuffle 10 cards
+11:52:16 :: INFO :: 
 ------------------
-00:45:30 :: INFO :: Tour: 1,
+11:52:16 :: INFO :: Tour: 1,
 Position Carlotta / exit: 4/22,
-Shadow: 2,
-blocked: {4, 5}
-white-4-suspect
-purple-7-suspect
-pink-2-suspect
-black-1-suspect
+Shadow: 6,
+blocked: {2, 3}
+white-2-suspect
+red-6-suspect
+pink-7-suspect
 blue-5-suspect
+black-4-suspect
+purple-1-suspect
 grey-0-suspect
-brown-6-suspect
-red-3-suspect
-00:45:30 :: DEBUG :: {
+brown-3-suspect
+11:52:16 :: DEBUG :: {
     "position_carlotta": 4,
     "exit": 22,
     "num_tour": 1,
-    "shadow": 2,
+    "shadow": 6,
     "blocked": [
-        4,
-        5
+        2,
+        3
     ],
     "characters": [
         {
             "color": "white",
+            "suspect": true,
+            "position": 2,
+            "power": true
+        },
+        {
+            "color": "red",
+            "suspect": true,
+            "position": 6,
+            "power": true
+        },
+        {
+            "color": "pink",
+            "suspect": true,
+            "position": 7,
+            "power": true
+        },
+        {
+            "color": "blue",
+            "suspect": true,
+            "position": 5,
+            "power": true
+        },
+        {
+            "color": "black",
             "suspect": true,
             "position": 4,
             "power": true
@@ -42,25 +66,7 @@ red-3-suspect
         {
             "color": "purple",
             "suspect": true,
-            "position": 7,
-            "power": true
-        },
-        {
-            "color": "pink",
-            "suspect": true,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "black",
-            "suspect": true,
             "position": 1,
-            "power": true
-        },
-        {
-            "color": "blue",
-            "suspect": true,
-            "position": 5,
             "power": true
         },
         {
@@ -72,36 +78,54 @@ red-3-suspect
         {
             "color": "brown",
             "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "red",
-            "suspect": true,
             "position": 3,
             "power": true
         }
     ],
     "active tiles": []
 }
-00:45:30 :: INFO :: -
+11:52:16 :: INFO :: -
 shuffle 8 tiles
 -
-00:45:30 :: INFO :: --
+11:52:16 :: INFO :: --
 fantom plays
 --
-00:45:30 :: DEBUG :: {
+11:52:16 :: DEBUG :: {
     "position_carlotta": 4,
     "exit": 22,
     "num_tour": 1,
-    "shadow": 2,
+    "shadow": 6,
     "blocked": [
-        4,
-        5
+        2,
+        3
     ],
     "characters": [
         {
             "color": "white",
+            "suspect": true,
+            "position": 2,
+            "power": true
+        },
+        {
+            "color": "red",
+            "suspect": true,
+            "position": 6,
+            "power": true
+        },
+        {
+            "color": "pink",
+            "suspect": true,
+            "position": 7,
+            "power": true
+        },
+        {
+            "color": "blue",
+            "suspect": true,
+            "position": 5,
+            "power": true
+        },
+        {
+            "color": "black",
             "suspect": true,
             "position": 4,
             "power": true
@@ -109,25 +133,7 @@ fantom plays
         {
             "color": "purple",
             "suspect": true,
-            "position": 7,
-            "power": true
-        },
-        {
-            "color": "pink",
-            "suspect": true,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "black",
-            "suspect": true,
             "position": 1,
-            "power": true
-        },
-        {
-            "color": "blue",
-            "suspect": true,
-            "position": 5,
             "power": true
         },
         {
@@ -139,97 +145,15 @@ fantom plays
         {
             "color": "brown",
             "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "red",
-            "suspect": true,
             "position": 3,
             "power": true
         }
     ],
     "active tiles": [
         {
-            "color": "blue",
+            "color": "red",
             "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "pink",
-            "suspect": true,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "black",
-            "suspect": true,
-            "position": 1,
-            "power": true
-        },
-        {
-            "color": "grey",
-            "suspect": true,
-            "position": 0,
-            "power": true
-        }
-    ]
-}
-00:45:30 :: DEBUG :: send json to player 1
-00:45:30 :: DEBUG :: receive json from player 1
-00:45:30 :: INFO :: question : select character
-00:45:30 :: INFO :: answer : black-1-suspect
-00:45:30 :: DEBUG :: send json to player 1
-00:45:30 :: DEBUG :: receive json from player 1
-00:45:30 :: INFO :: question : select position
-00:45:30 :: INFO :: answer : 2
-00:45:30 :: INFO :: new position : black-2-suspect
-00:45:30 :: DEBUG :: send json to player 1
-00:45:30 :: DEBUG :: receive json from player 1
-00:45:30 :: INFO :: question : activate black power
-00:45:30 :: INFO :: answer  : no
-00:45:30 :: INFO :: --
-inspector plays
---
-00:45:30 :: DEBUG :: {
-    "position_carlotta": 4,
-    "exit": 22,
-    "num_tour": 1,
-    "shadow": 2,
-    "blocked": [
-        4,
-        5
-    ],
-    "characters": [
-        {
-            "color": "white",
-            "suspect": true,
-            "position": 4,
-            "power": true
-        },
-        {
-            "color": "purple",
-            "suspect": true,
-            "position": 7,
-            "power": true
-        },
-        {
-            "color": "pink",
-            "suspect": true,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "black",
-            "suspect": true,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "blue",
-            "suspect": true,
-            "position": 5,
+            "position": 6,
             "power": true
         },
         {
@@ -239,855 +163,9 @@ inspector plays
             "power": true
         },
         {
-            "color": "brown",
-            "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "red",
-            "suspect": true,
-            "position": 3,
-            "power": true
-        }
-    ],
-    "active tiles": [
-        {
-            "color": "blue",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "pink",
-            "suspect": true,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "grey",
-            "suspect": true,
-            "position": 0,
-            "power": true
-        }
-    ]
-}
-00:45:30 :: DEBUG :: send json to player 0
-00:45:30 :: DEBUG :: receive json from player 0
-00:45:30 :: INFO :: question : select character
-00:45:30 :: INFO :: answer : blue-5-suspect
-00:45:30 :: DEBUG :: send json to player 0
-00:45:30 :: DEBUG :: receive json from player 0
-00:45:31 :: INFO :: question : activate blue power
-00:45:31 :: INFO :: answer  : no
-00:45:31 :: DEBUG :: send json to player 0
-00:45:31 :: DEBUG :: receive json from player 0
-00:45:31 :: INFO :: question : select position
-00:45:31 :: INFO :: answer : 6
-00:45:31 :: INFO :: new position : blue-6-suspect
-00:45:31 :: DEBUG :: send json to player 0
-00:45:31 :: DEBUG :: receive json from player 0
-00:45:31 :: INFO :: question : activate blue power
-00:45:31 :: INFO :: answer  : yes
-00:45:31 :: INFO :: blue power activated
-00:45:31 :: DEBUG :: send json to player 0
-00:45:31 :: DEBUG :: receive json from player 0
-00:45:31 :: DEBUG :: send json to player 0
-00:45:31 :: DEBUG :: receive json from player 0
-00:45:31 :: INFO :: question : blue character power exit
-00:45:31 :: INFO :: answer : {8, 4}
-00:45:31 :: INFO :: --
-inspector plays
---
-00:45:31 :: DEBUG :: {
-    "position_carlotta": 4,
-    "exit": 22,
-    "num_tour": 1,
-    "shadow": 2,
-    "blocked": [
-        8,
-        4
-    ],
-    "characters": [
-        {
-            "color": "white",
-            "suspect": true,
-            "position": 4,
-            "power": true
-        },
-        {
             "color": "purple",
-            "suspect": true,
-            "position": 7,
-            "power": true
-        },
-        {
-            "color": "pink",
-            "suspect": true,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "black",
-            "suspect": true,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "blue",
-            "suspect": true,
-            "position": 6,
-            "power": false
-        },
-        {
-            "color": "grey",
-            "suspect": true,
-            "position": 0,
-            "power": true
-        },
-        {
-            "color": "brown",
-            "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "red",
-            "suspect": true,
-            "position": 3,
-            "power": true
-        }
-    ],
-    "active tiles": [
-        {
-            "color": "pink",
-            "suspect": true,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "grey",
-            "suspect": true,
-            "position": 0,
-            "power": true
-        }
-    ]
-}
-00:45:31 :: DEBUG :: send json to player 0
-00:45:31 :: DEBUG :: receive json from player 0
-00:45:31 :: INFO :: question : select character
-00:45:31 :: INFO :: answer : grey-0-suspect
-00:45:31 :: DEBUG :: send json to player 0
-00:45:31 :: DEBUG :: receive json from player 0
-00:45:31 :: INFO :: question : activate grey power
-00:45:31 :: INFO :: answer  : yes
-00:45:31 :: INFO :: grey power activated
-00:45:31 :: DEBUG :: send json to player 0
-00:45:31 :: DEBUG :: receive json from player 0
-00:45:31 :: INFO :: question : grey character power
-00:45:31 :: INFO :: answer : 5
-00:45:31 :: DEBUG :: send json to player 0
-00:45:31 :: DEBUG :: receive json from player 0
-00:45:31 :: INFO :: question : select position
-00:45:31 :: INFO :: answer : 1
-00:45:31 :: INFO :: new position : grey-1-suspect
-00:45:31 :: INFO :: --
-fantom plays
---
-00:45:31 :: DEBUG :: {
-    "position_carlotta": 4,
-    "exit": 22,
-    "num_tour": 1,
-    "shadow": 5,
-    "blocked": [
-        8,
-        4
-    ],
-    "characters": [
-        {
-            "color": "white",
-            "suspect": true,
-            "position": 4,
-            "power": true
-        },
-        {
-            "color": "purple",
-            "suspect": true,
-            "position": 7,
-            "power": true
-        },
-        {
-            "color": "pink",
-            "suspect": true,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "black",
-            "suspect": true,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "blue",
-            "suspect": true,
-            "position": 6,
-            "power": false
-        },
-        {
-            "color": "grey",
             "suspect": true,
             "position": 1,
-            "power": false
-        },
-        {
-            "color": "brown",
-            "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "red",
-            "suspect": true,
-            "position": 3,
-            "power": true
-        }
-    ],
-    "active tiles": [
-        {
-            "color": "pink",
-            "suspect": true,
-            "position": 2,
-            "power": true
-        }
-    ]
-}
-00:45:31 :: DEBUG :: send json to player 1
-00:45:31 :: DEBUG :: receive json from player 1
-00:45:31 :: INFO :: question : select character
-00:45:31 :: INFO :: answer : pink-2-suspect
-00:45:31 :: DEBUG :: send json to player 1
-00:45:31 :: DEBUG :: receive json from player 1
-00:45:31 :: INFO :: question : select position
-00:45:31 :: INFO :: answer : 6
-00:45:31 :: INFO :: new position : pink-6-suspect
-00:45:31 :: INFO :: the fantom does not scream.
-00:45:31 :: INFO :: 
-------------------
-00:45:31 :: INFO :: Tour: 2,
-Position Carlotta / exit: 7/22,
-Shadow: 5,
-blocked: {8, 4}
-white-4-clean
-purple-7-clean
-pink-6-suspect
-black-2-clean
-blue-6-suspect
-grey-1-clean
-brown-6-suspect
-red-3-clean
-00:45:31 :: DEBUG :: {
-    "position_carlotta": 7,
-    "exit": 22,
-    "num_tour": 2,
-    "shadow": 5,
-    "blocked": [
-        8,
-        4
-    ],
-    "characters": [
-        {
-            "color": "white",
-            "suspect": false,
-            "position": 4,
-            "power": true
-        },
-        {
-            "color": "purple",
-            "suspect": false,
-            "position": 7,
-            "power": true
-        },
-        {
-            "color": "pink",
-            "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "black",
-            "suspect": false,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "blue",
-            "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "grey",
-            "suspect": false,
-            "position": 1,
-            "power": true
-        },
-        {
-            "color": "brown",
-            "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "red",
-            "suspect": false,
-            "position": 3,
-            "power": true
-        }
-    ],
-    "active tiles": []
-}
-00:45:31 :: INFO :: --
-inspector plays
---
-00:45:31 :: DEBUG :: {
-    "position_carlotta": 7,
-    "exit": 22,
-    "num_tour": 2,
-    "shadow": 5,
-    "blocked": [
-        8,
-        4
-    ],
-    "characters": [
-        {
-            "color": "white",
-            "suspect": false,
-            "position": 4,
-            "power": true
-        },
-        {
-            "color": "purple",
-            "suspect": false,
-            "position": 7,
-            "power": true
-        },
-        {
-            "color": "pink",
-            "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "black",
-            "suspect": false,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "blue",
-            "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "grey",
-            "suspect": false,
-            "position": 1,
-            "power": true
-        },
-        {
-            "color": "brown",
-            "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "red",
-            "suspect": false,
-            "position": 3,
-            "power": true
-        }
-    ],
-    "active tiles": [
-        {
-            "color": "brown",
-            "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "red",
-            "suspect": false,
-            "position": 3,
-            "power": true
-        },
-        {
-            "color": "white",
-            "suspect": false,
-            "position": 4,
-            "power": true
-        },
-        {
-            "color": "purple",
-            "suspect": false,
-            "position": 7,
-            "power": true
-        }
-    ]
-}
-00:45:31 :: DEBUG :: send json to player 0
-00:45:31 :: DEBUG :: receive json from player 0
-00:45:31 :: INFO :: question : select character
-00:45:31 :: INFO :: answer : red-3-clean
-00:45:31 :: DEBUG :: send json to player 0
-00:45:31 :: DEBUG :: receive json from player 0
-00:45:32 :: INFO :: question : activate red power
-00:45:32 :: INFO :: answer  : no
-00:45:32 :: DEBUG :: send json to player 0
-00:45:32 :: DEBUG :: receive json from player 0
-00:45:32 :: INFO :: question : select position
-00:45:32 :: INFO :: answer : 2
-00:45:32 :: INFO :: new position : red-2-clean
-00:45:32 :: DEBUG :: send json to player 0
-00:45:32 :: DEBUG :: receive json from player 0
-00:45:32 :: INFO :: question : activate red power
-00:45:32 :: INFO :: answer  : no
-00:45:32 :: INFO :: --
-fantom plays
---
-00:45:32 :: DEBUG :: {
-    "position_carlotta": 7,
-    "exit": 22,
-    "num_tour": 2,
-    "shadow": 5,
-    "blocked": [
-        8,
-        4
-    ],
-    "characters": [
-        {
-            "color": "white",
-            "suspect": false,
-            "position": 4,
-            "power": true
-        },
-        {
-            "color": "purple",
-            "suspect": false,
-            "position": 7,
-            "power": true
-        },
-        {
-            "color": "pink",
-            "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "black",
-            "suspect": false,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "blue",
-            "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "grey",
-            "suspect": false,
-            "position": 1,
-            "power": true
-        },
-        {
-            "color": "brown",
-            "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "red",
-            "suspect": false,
-            "position": 2,
-            "power": true
-        }
-    ],
-    "active tiles": [
-        {
-            "color": "brown",
-            "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "white",
-            "suspect": false,
-            "position": 4,
-            "power": true
-        },
-        {
-            "color": "purple",
-            "suspect": false,
-            "position": 7,
-            "power": true
-        }
-    ]
-}
-00:45:32 :: DEBUG :: send json to player 1
-00:45:32 :: DEBUG :: receive json from player 1
-00:45:32 :: INFO :: question : select character
-00:45:32 :: INFO :: answer : white-4-clean
-00:45:32 :: DEBUG :: send json to player 1
-00:45:32 :: DEBUG :: receive json from player 1
-00:45:32 :: INFO :: question : select position
-00:45:32 :: INFO :: answer : 5
-00:45:32 :: INFO :: new position : white-5-clean
-00:45:32 :: DEBUG :: send json to player 1
-00:45:32 :: DEBUG :: receive json from player 1
-00:45:32 :: INFO :: question : activate white power
-00:45:32 :: INFO :: answer  : yes
-00:45:32 :: INFO :: white power activated
-00:45:32 :: INFO :: --
-fantom plays
---
-00:45:32 :: DEBUG :: {
-    "position_carlotta": 7,
-    "exit": 22,
-    "num_tour": 2,
-    "shadow": 5,
-    "blocked": [
-        8,
-        4
-    ],
-    "characters": [
-        {
-            "color": "white",
-            "suspect": false,
-            "position": 5,
-            "power": false
-        },
-        {
-            "color": "purple",
-            "suspect": false,
-            "position": 7,
-            "power": true
-        },
-        {
-            "color": "pink",
-            "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "black",
-            "suspect": false,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "blue",
-            "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "grey",
-            "suspect": false,
-            "position": 1,
-            "power": true
-        },
-        {
-            "color": "brown",
-            "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "red",
-            "suspect": false,
-            "position": 2,
-            "power": true
-        }
-    ],
-    "active tiles": [
-        {
-            "color": "brown",
-            "suspect": true,
-            "position": 6,
-            "power": true
-        },
-        {
-            "color": "purple",
-            "suspect": false,
-            "position": 7,
-            "power": true
-        }
-    ]
-}
-00:45:32 :: DEBUG :: send json to player 1
-00:45:32 :: DEBUG :: receive json from player 1
-00:45:32 :: INFO :: question : select character
-00:45:32 :: INFO :: answer : brown-6-suspect
-00:45:32 :: DEBUG :: send json to player 1
-00:45:32 :: DEBUG :: receive json from player 1
-00:45:32 :: INFO :: question : activate brown power
-00:45:32 :: INFO :: answer  : yes
-00:45:32 :: INFO :: brown power activated
-00:45:32 :: DEBUG :: send json to player 1
-00:45:32 :: DEBUG :: receive json from player 1
-00:45:32 :: INFO :: question : select position
-00:45:32 :: INFO :: answer : 5
-00:45:32 :: DEBUG :: more than one character moves
-00:45:32 :: INFO :: new position : pink-5-suspect
-00:45:32 :: INFO :: new position : blue-5-suspect
-00:45:32 :: INFO :: new position : brown-5-suspect
-00:45:32 :: INFO :: --
-inspector plays
---
-00:45:32 :: DEBUG :: {
-    "position_carlotta": 7,
-    "exit": 22,
-    "num_tour": 2,
-    "shadow": 5,
-    "blocked": [
-        8,
-        4
-    ],
-    "characters": [
-        {
-            "color": "white",
-            "suspect": false,
-            "position": 5,
-            "power": false
-        },
-        {
-            "color": "purple",
-            "suspect": false,
-            "position": 7,
-            "power": true
-        },
-        {
-            "color": "pink",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "black",
-            "suspect": false,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "blue",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "grey",
-            "suspect": false,
-            "position": 1,
-            "power": true
-        },
-        {
-            "color": "brown",
-            "suspect": true,
-            "position": 5,
-            "power": false
-        },
-        {
-            "color": "red",
-            "suspect": false,
-            "position": 2,
-            "power": true
-        }
-    ],
-    "active tiles": [
-        {
-            "color": "purple",
-            "suspect": false,
-            "position": 7,
-            "power": true
-        }
-    ]
-}
-00:45:32 :: DEBUG :: send json to player 0
-00:45:32 :: DEBUG :: receive json from player 0
-00:45:32 :: INFO :: question : select character
-00:45:32 :: INFO :: answer : purple-7-clean
-00:45:32 :: DEBUG :: send json to player 0
-00:45:32 :: DEBUG :: receive json from player 0
-00:45:32 :: INFO :: question : activate purple power
-00:45:32 :: INFO :: answer  : yes
-00:45:32 :: INFO :: purple power activated
-00:45:32 :: DEBUG :: send json to player 0
-00:45:32 :: DEBUG :: receive json from player 0
-00:45:32 :: INFO :: question : purple character power
-00:45:32 :: INFO :: answer : red
-00:45:32 :: INFO :: new position : purple-2-clean
-00:45:32 :: INFO :: new position : red-7-clean
-00:45:32 :: INFO :: The fantom screams.
-00:45:32 :: INFO :: 
-------------------
-00:45:32 :: INFO :: Tour: 3,
-Position Carlotta / exit: 11/22,
-Shadow: 5,
-blocked: {8, 4}
-white-5-clean
-purple-2-clean
-pink-5-suspect
-black-2-clean
-blue-5-suspect
-grey-1-clean
-brown-5-suspect
-red-7-clean
-00:45:32 :: DEBUG :: {
-    "position_carlotta": 11,
-    "exit": 22,
-    "num_tour": 3,
-    "shadow": 5,
-    "blocked": [
-        8,
-        4
-    ],
-    "characters": [
-        {
-            "color": "white",
-            "suspect": false,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "purple",
-            "suspect": false,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "pink",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "black",
-            "suspect": false,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "blue",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "grey",
-            "suspect": false,
-            "position": 1,
-            "power": true
-        },
-        {
-            "color": "brown",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "red",
-            "suspect": false,
-            "position": 7,
-            "power": true
-        }
-    ],
-    "active tiles": []
-}
-00:45:32 :: INFO :: -
-shuffle 8 tiles
--
-00:45:32 :: INFO :: --
-fantom plays
---
-00:45:32 :: DEBUG :: {
-    "position_carlotta": 11,
-    "exit": 22,
-    "num_tour": 3,
-    "shadow": 5,
-    "blocked": [
-        8,
-        4
-    ],
-    "characters": [
-        {
-            "color": "white",
-            "suspect": false,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "purple",
-            "suspect": false,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "pink",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "black",
-            "suspect": false,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "blue",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "grey",
-            "suspect": false,
-            "position": 1,
-            "power": true
-        },
-        {
-            "color": "brown",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "red",
-            "suspect": false,
-            "position": 7,
-            "power": true
-        }
-    ],
-    "active tiles": [
-        {
-            "color": "black",
-            "suspect": false,
-            "position": 2,
-            "power": true
-        },
-        {
-            "color": "brown",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "purple",
-            "suspect": false,
-            "position": 2,
             "power": true
         },
         {
@@ -1098,305 +176,5 @@ fantom plays
         }
     ]
 }
-00:45:32 :: DEBUG :: send json to player 1
-00:45:32 :: DEBUG :: receive json from player 1
-00:45:33 :: INFO :: question : select character
-00:45:33 :: INFO :: answer : black-2-clean
-00:45:33 :: DEBUG :: send json to player 1
-00:45:33 :: DEBUG :: receive json from player 1
-00:45:33 :: INFO :: question : select position
-00:45:33 :: INFO :: answer : 3
-00:45:33 :: INFO :: new position : black-3-clean
-00:45:33 :: DEBUG :: send json to player 1
-00:45:33 :: DEBUG :: receive json from player 1
-00:45:33 :: INFO :: question : activate black power
-00:45:33 :: INFO :: answer  : yes
-00:45:33 :: INFO :: black power activated
-00:45:33 :: INFO :: new position : purple-3-clean
-00:45:33 :: INFO :: new position : red-3-clean
-00:45:33 :: INFO :: --
-inspector plays
---
-00:45:33 :: DEBUG :: {
-    "position_carlotta": 11,
-    "exit": 22,
-    "num_tour": 3,
-    "shadow": 5,
-    "blocked": [
-        8,
-        4
-    ],
-    "characters": [
-        {
-            "color": "white",
-            "suspect": false,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "purple",
-            "suspect": false,
-            "position": 3,
-            "power": true
-        },
-        {
-            "color": "pink",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "black",
-            "suspect": false,
-            "position": 3,
-            "power": false
-        },
-        {
-            "color": "blue",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "grey",
-            "suspect": false,
-            "position": 1,
-            "power": true
-        },
-        {
-            "color": "brown",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "red",
-            "suspect": false,
-            "position": 3,
-            "power": true
-        }
-    ],
-    "active tiles": [
-        {
-            "color": "brown",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "purple",
-            "suspect": false,
-            "position": 3,
-            "power": true
-        },
-        {
-            "color": "blue",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        }
-    ]
-}
-00:45:33 :: DEBUG :: send json to player 0
-00:45:33 :: DEBUG :: receive json from player 0
-00:45:33 :: INFO :: question : select character
-00:45:33 :: INFO :: answer : purple-3-clean
-00:45:33 :: DEBUG :: send json to player 0
-00:45:33 :: DEBUG :: receive json from player 0
-00:45:33 :: INFO :: question : activate purple power
-00:45:33 :: INFO :: answer  : yes
-00:45:33 :: INFO :: purple power activated
-00:45:33 :: DEBUG :: send json to player 0
-00:45:33 :: DEBUG :: receive json from player 0
-00:45:33 :: INFO :: question : purple character power
-00:45:33 :: INFO :: answer : red
-00:45:33 :: INFO :: new position : purple-3-clean
-00:45:33 :: INFO :: new position : red-3-clean
-00:45:33 :: INFO :: --
-inspector plays
---
-00:45:33 :: DEBUG :: {
-    "position_carlotta": 11,
-    "exit": 22,
-    "num_tour": 3,
-    "shadow": 5,
-    "blocked": [
-        8,
-        4
-    ],
-    "characters": [
-        {
-            "color": "white",
-            "suspect": false,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "purple",
-            "suspect": false,
-            "position": 3,
-            "power": false
-        },
-        {
-            "color": "pink",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "black",
-            "suspect": false,
-            "position": 3,
-            "power": false
-        },
-        {
-            "color": "blue",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "grey",
-            "suspect": false,
-            "position": 1,
-            "power": true
-        },
-        {
-            "color": "brown",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "red",
-            "suspect": false,
-            "position": 3,
-            "power": true
-        }
-    ],
-    "active tiles": [
-        {
-            "color": "brown",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "blue",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        }
-    ]
-}
-00:45:33 :: DEBUG :: send json to player 0
-00:45:33 :: DEBUG :: receive json from player 0
-00:45:33 :: INFO :: question : select character
-00:45:33 :: INFO :: answer : blue-5-suspect
-00:45:33 :: DEBUG :: send json to player 0
-00:45:33 :: DEBUG :: receive json from player 0
-00:45:33 :: INFO :: question : activate blue power
-00:45:33 :: INFO :: answer  : yes
-00:45:33 :: INFO :: blue power activated
-00:45:33 :: DEBUG :: send json to player 0
-00:45:33 :: DEBUG :: receive json from player 0
-00:45:33 :: DEBUG :: send json to player 0
-00:45:33 :: DEBUG :: receive json from player 0
-00:45:33 :: INFO :: question : blue character power exit
-00:45:33 :: INFO :: answer : {0, 4}
-00:45:33 :: DEBUG :: send json to player 0
-00:45:33 :: DEBUG :: receive json from player 0
-00:45:33 :: INFO :: question : select position
-00:45:33 :: INFO :: answer : 6
-00:45:33 :: INFO :: new position : blue-6-suspect
-00:45:33 :: INFO :: --
-fantom plays
---
-00:45:33 :: DEBUG :: {
-    "position_carlotta": 11,
-    "exit": 22,
-    "num_tour": 3,
-    "shadow": 5,
-    "blocked": [
-        0,
-        4
-    ],
-    "characters": [
-        {
-            "color": "white",
-            "suspect": false,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "purple",
-            "suspect": false,
-            "position": 3,
-            "power": false
-        },
-        {
-            "color": "pink",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "black",
-            "suspect": false,
-            "position": 3,
-            "power": false
-        },
-        {
-            "color": "blue",
-            "suspect": true,
-            "position": 6,
-            "power": false
-        },
-        {
-            "color": "grey",
-            "suspect": false,
-            "position": 1,
-            "power": true
-        },
-        {
-            "color": "brown",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        },
-        {
-            "color": "red",
-            "suspect": false,
-            "position": 3,
-            "power": true
-        }
-    ],
-    "active tiles": [
-        {
-            "color": "brown",
-            "suspect": true,
-            "position": 5,
-            "power": true
-        }
-    ]
-}
-00:45:33 :: DEBUG :: send json to player 1
-00:45:33 :: DEBUG :: receive json from player 1
-00:45:33 :: INFO :: question : select character
-00:45:33 :: INFO :: answer : brown-5-suspect
-00:45:33 :: DEBUG :: send json to player 1
-00:45:33 :: DEBUG :: receive json from player 1
-00:45:33 :: INFO :: question : activate brown power
-00:45:33 :: INFO :: answer  : no
-00:45:33 :: DEBUG :: send json to player 1
-00:45:33 :: DEBUG :: receive json from player 1
-00:45:34 :: INFO :: question : select position
-00:45:34 :: INFO :: answer : 6
-00:45:34 :: INFO :: new position : brown-6-suspect
-00:45:34 :: INFO :: The fantom screams.
-00:45:34 :: INFO :: ----------
----- inspector wins : fantom is pink-5-suspect
-00:45:34 :: INFO :: ---- final position of Carlotta : 13
-00:45:34 :: INFO :: ---- exit : 22
-00:45:34 :: INFO :: ---- final score : 9
-----------
+11:52:16 :: DEBUG :: send json to player 1
+11:52:16 :: DEBUG :: receive json from player 1

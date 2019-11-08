@@ -75,11 +75,12 @@ def send_json_to_player(player, data):
         :param data: python object sent to the player.
     """
     logger.debug(f"send json to player {player}")
+    return (data)
     msg = json.dumps(data).encode("utf-8")
     protocol.send_json(clients[player], msg)
 
 
-def receive_json_from_player(player):
+def receive_json_from_player(data):
     """
         Receives a python object from the client and converts it to a python
         object.
@@ -91,7 +92,7 @@ def receive_json_from_player(player):
     logger.debug(f"receive json from player {player}")
     received_bytes = protocol.receive_json(clients[player])
     json_object = json.loads(received_bytes)
-    return json_object
+    return data
 
 
 def ask_question_json(player, question):
@@ -538,9 +539,11 @@ class Game:
             self.tour()
         # game ends
         if self.position_carlotta < self.exit:
+            send_json_to_player(self.players[0].numero, {"winner": "inspector"})
             logger.info(
                 "----------\n---- inspector wins : fantom is " + str(self.fantom))
         else:
+            send_json_to_player(self.players[1].numero, {"winner": "fantom"})
             logger.info("----------\n---- fantom wins")
         # log
         logger.info(

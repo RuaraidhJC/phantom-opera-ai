@@ -1,4 +1,6 @@
-class Game():
+import Board from PhantomLogic
+
+class PhantomGame():
     """
     This class specifies the base Game class. To define your own game, subclass
     this class and implement the functions below. This works when the game is
@@ -9,7 +11,7 @@ class Game():
     See othello/OthelloGame.py for an example implementation.
     """
     def __init__(self):
-        pass
+        self.board = Board()
 
     def getInitBoard(self):
         """
@@ -17,21 +19,22 @@ class Game():
             startBoard: a representation of the board (ideally this is the form
                         that will be the input to your neural network)
         """
-        pass
+        player, pieces = self.board.get_next_question()
+        return pieces
 
     def getBoardSize(self):
         """
         Returns:
             (x,y): a tuple of board dimensions
         """
-        pass
+        self.board.pieces.shape
 
     def getActionSize(self):
         """
         Returns:
             actionSize: number of all possible actions
         """
-        pass
+        return self.board.action_size
 
     def getNextState(self, board, player, action):
         """
@@ -44,7 +47,9 @@ class Game():
             nextBoard: board after applying action
             nextPlayer: player who plays in the next turn (should be -player)
         """
-        pass
+
+        self.board.set_answer(action, player)
+        next_board, next_player = self.board.get_next_question()
 
     def getValidMoves(self, board, player):
         """
@@ -57,7 +62,7 @@ class Game():
                         moves that are valid from the current board and player,
                         0 for invalid moves
         """
-        pass
+        return [1] * self.board.valid_actions + [0] * (self.board.action_size - self.board.valid_actions)
 
     def getGameEnded(self, board, player):
         """
@@ -70,7 +75,7 @@ class Game():
                small non-zero value for draw.
                
         """
-        pass
+        return self.board.has_game_ended()
 
     def getCanonicalForm(self, board, player):
         """
@@ -86,7 +91,7 @@ class Game():
                             board as is. When the player is black, we can invert
                             the colors and return the board.
         """
-        pass
+        return self.board.pieces
 
     def getSymmetries(self, board, pi):
         """
@@ -99,7 +104,7 @@ class Game():
                        form of the board and the corresponding pi vector. This
                        is used when training the neural network from examples.
         """
-        pass
+        return [(board, pi)]
 
     def stringRepresentation(self, board):
         """
@@ -110,4 +115,4 @@ class Game():
             boardString: a quick conversion of board to a string format.
                          Required by MCTS for hashing.
         """
-        pass
+        return ''.join(str(e) for e in self.board.pieces

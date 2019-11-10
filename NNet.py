@@ -11,7 +11,7 @@ from utils import *
 from NeuralNet import NeuralNet
 
 import argparse
-from .PhantomNNet import PhantomNNet as onnet
+from PhantomNNet import PhantomNNet as onnet
 
 """
 NeuralNet wrapper class for the TicTacToeNNet.

@@ -1,4 +1,4 @@
-from .PhantomLogic import Board
+from PhantomLogic import Board
 
 class PhantomGame():
     """

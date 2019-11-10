@@ -7,6 +7,13 @@ import protocol
 from random import randrange
 import random
 
+import sys
+
+from PhantomGame import PhantomGame as Game
+from NNet import NNetWrapper as NNet
+from MCTS import MCTS
+import numpy as np
+
 host = "localhost"
 port = 12000
 # HEADERSIZE = 10
@@ -31,6 +38,10 @@ stream_handler.setLevel(logging.DEBUG)
 fantom_logger.addHandler(stream_handler)
 
 
+class dotdict(dict):
+    def __getattr__(self, name):
+        return self[name]
+
 class Player():
 
     def __init__(self):
@@ -38,6 +49,12 @@ class Player():
         self.end = False
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        self.g = Game()
+        self.n1 = NNet(self.g)
+        #self.n1.load_checkpoint('../pretrained_models/phantom/keras/','6x6 checkpoint_145.pth.tar')
+        self.args1 = dotdict({'numMCTSSims': 50, 'cpuct':1.0})
+        self.mcts1 = MCTS(self.g, self.n1, self.args1)
+        self.n1p = lambda x: np.argmax(self.mcts1.getActionProb(x, temp=0)).item()
 
     def connect(self):
         self.socket.connect((host, port))
@@ -46,18 +63,7 @@ class Player():
         self.socket.close()
 
     def answer(self, question):
-        # work
-        data = question["data"]
-        game_state = question["game state"]
-        response_index = random.randint(0, len(data)-1)
-        # log
-        fantom_logger.debug("|\n|")
-        fantom_logger.debug(f"received question ------ {question}")
-        fantom_logger.debug("fantom answers")
-        fantom_logger.debug(f"question type ----- {question['question type']}")
-        fantom_logger.debug(f"data -------------- {data}")
-        fantom_logger.debug(f"response index ---- {response_index}")
-        fantom_logger.debug(f"response ---------- {data[response_index]}")
+        response_index = self.n1p(question)
         return response_index
 
     def handle_json(self, data):

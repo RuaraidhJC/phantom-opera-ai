@@ -79,9 +79,9 @@ class ThreadedSocket(Thread):
 class Board:
 
     def __init__(self):
-        self.clients = [ThreadedSocket(-1, msg_queue), ThreadedSocket(1, msg_queue)]
-        self.clients[0].start()
-        self.clients[1].start()
+        #self.clients = [ThreadedSocket(-1, msg_queue), ThreadedSocket(1, msg_queue)]
+        #self.clients[0].start()
+        #self.clients[1].start()
         self.next_player = 0
         self.current_question = ""
         self.action_size = 10

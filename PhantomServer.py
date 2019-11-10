@@ -75,12 +75,11 @@ def send_json_to_player(player, data):
         :param data: python object sent to the player.
     """
     logger.debug(f"send json to player {player}")
-    return (data)
     msg = json.dumps(data).encode("utf-8")
     protocol.send_json(clients[player], msg)
 
 
-def receive_json_from_player(data):
+def receive_json_from_player(player):
     """
         Receives a python object from the client and converts it to a python
         object.
@@ -92,7 +91,7 @@ def receive_json_from_player(data):
     logger.debug(f"receive json from player {player}")
     received_bytes = protocol.receive_json(clients[player])
     json_object = json.loads(received_bytes)
-    return data
+    return json_object
 
 
 def ask_question_json(player, question):

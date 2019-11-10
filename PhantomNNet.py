@@ -7,7 +7,7 @@ from keras.models import *
 from keras.layers import *
 from keras.optimizers import *
 
-class TicTacToeNNet():
+class PhantomNNet():
     def __init__(self, game, args):
         # game params
         self.board_x, self.board_y = game.getBoardSize()
@@ -15,6 +15,8 @@ class TicTacToeNNet():
         self.args = args
 
         # Neural Net
+        print(self.board_x)
+        print(self.board_y)
         self.input_boards = Input(shape=(self.board_x, self.board_y))    # s: batch_size x board_x x board_y
 
         x_image = Reshape((self.board_x, self.board_y, 1))(self.input_boards)                # batch_size  x board_x x board_y x 1
